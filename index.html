@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>HAND GESTURES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://teachablemachine.withgoogle.com/models/tHbAd7Ebp/"></script>
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <br><br>
+      <h1 class="btn btn-info heading">BHARATNATYAM MUDRAS
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+        <span>&#9994;</span>
+        <span>&#128079;</span>
+        <span>&#129304;</span>
+        </h1>
+
+
+      <p style="font-size: 22px;">Take a selfie of a bharatnayam mudra to know about it's name
+      	<br>
+        <b style="color: yellow">Do you know bharatnatyam?</b>
+        <br>
+        <b style="color: black">do you know bharatnatnatyam mudras?</b>
+        <br>
+        <b style="color: red">Are you ready?</b>
+        <br>
+        <p style="font-size: 30px;">
+          &#9995; | &#9994; | &#9757;
+        </p>
+      </p>
+
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-primary">Capture Image</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction - </label>
+        <p class="object_name" id="result_object_name"></p>
+        <p class="emoji" id="emoji_update"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Predict Bharatnatyam Mudra</button>
+       </div>
+
+
+
+
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
